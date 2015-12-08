@@ -33,27 +33,27 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.b_StartListening = new System.Windows.Forms.Button();
-            this.b_TestCommand = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.b_SaveCmd = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.b_StopListening = new System.Windows.Forms.Button();
-            this.t_IncomingIR = new System.Windows.Forms.TextBox();
-            this.t_IRCmdTest = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aPISpecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quickHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.b_StartListening = new System.Windows.Forms.Button();
+            this.b_TestCommand = new System.Windows.Forms.Button();
+            this.t_Device = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.t_Function = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.t_Command = new System.Windows.Forms.TextBox();
+            this.b_SaveCmd = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.t_IRCmdTest = new System.Windows.Forms.TextBox();
+            this.b_StopListening = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -100,6 +100,34 @@
             this.configurationToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.configurationToolStripMenuItem.Text = "Configuration";
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aPISpecToolStripMenuItem,
+            this.quickHelpToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aPISpecToolStripMenuItem
+            // 
+            this.aPISpecToolStripMenuItem.Name = "aPISpecToolStripMenuItem";
+            this.aPISpecToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.aPISpecToolStripMenuItem.Text = "API Spec";
+            // 
+            // quickHelpToolStripMenuItem
+            // 
+            this.quickHelpToolStripMenuItem.Name = "quickHelpToolStripMenuItem";
+            this.quickHelpToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.quickHelpToolStripMenuItem.Text = "Quick Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
             // b_StartListening
             // 
             this.b_StartListening.Location = new System.Drawing.Point(36, 443);
@@ -118,12 +146,12 @@
             this.b_TestCommand.Text = "Test Command";
             this.b_TestCommand.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // t_Device
             // 
-            this.textBox1.Location = new System.Drawing.Point(478, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.t_Device.Location = new System.Drawing.Point(478, 41);
+            this.t_Device.Name = "t_Device";
+            this.t_Device.Size = new System.Drawing.Size(100, 20);
+            this.t_Device.TabIndex = 5;
             // 
             // label2
             // 
@@ -143,12 +171,12 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Function";
             // 
-            // textBox2
+            // t_Function
             // 
-            this.textBox2.Location = new System.Drawing.Point(478, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 7;
+            this.t_Function.Location = new System.Drawing.Point(478, 67);
+            this.t_Function.Name = "t_Function";
+            this.t_Function.Size = new System.Drawing.Size(100, 20);
+            this.t_Function.TabIndex = 7;
             // 
             // label4
             // 
@@ -159,12 +187,12 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Command";
             // 
-            // textBox3
+            // t_Command
             // 
-            this.textBox3.Location = new System.Drawing.Point(478, 93);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.t_Command.Location = new System.Drawing.Point(478, 93);
+            this.t_Command.Name = "t_Command";
+            this.t_Command.Size = new System.Drawing.Size(100, 20);
+            this.t_Command.TabIndex = 9;
             // 
             // b_SaveCmd
             // 
@@ -174,13 +202,14 @@
             this.b_SaveCmd.TabIndex = 11;
             this.b_SaveCmd.Text = "Save Command";
             this.b_SaveCmd.UseVisualStyleBackColor = true;
+            this.b_SaveCmd.Click += new System.EventHandler(this.b_SaveCmd_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.t_IRCmdTest);
-            this.panel1.Controls.Add(this.t_IncomingIR);
             this.panel1.Controls.Add(this.b_StopListening);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.statusStrip1);
@@ -190,6 +219,40 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(590, 502);
             this.panel1.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(39, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Incoming IR Commands";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(40, 401);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Command for Testing";
+            // 
+            // t_IRCmdTest
+            // 
+            this.t_IRCmdTest.Location = new System.Drawing.Point(36, 417);
+            this.t_IRCmdTest.Name = "t_IRCmdTest";
+            this.t_IRCmdTest.Size = new System.Drawing.Size(519, 20);
+            this.t_IRCmdTest.TabIndex = 8;
+            // 
+            // b_StopListening
+            // 
+            this.b_StopListening.Location = new System.Drawing.Point(243, 443);
+            this.b_StopListening.Name = "b_StopListening";
+            this.b_StopListening.Size = new System.Drawing.Size(125, 23);
+            this.b_StopListening.TabIndex = 6;
+            this.b_StopListening.Text = "Stop Listening";
+            this.b_StopListening.UseVisualStyleBackColor = true;
             // 
             // statusStrip1
             // 
@@ -207,75 +270,13 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // b_StopListening
+            // listBox1
             // 
-            this.b_StopListening.Location = new System.Drawing.Point(243, 443);
-            this.b_StopListening.Name = "b_StopListening";
-            this.b_StopListening.Size = new System.Drawing.Size(125, 23);
-            this.b_StopListening.TabIndex = 6;
-            this.b_StopListening.Text = "Stop Listening";
-            this.b_StopListening.UseVisualStyleBackColor = true;
-            // 
-            // t_IncomingIR
-            // 
-            this.t_IncomingIR.Location = new System.Drawing.Point(36, 277);
-            this.t_IncomingIR.Multiline = true;
-            this.t_IncomingIR.Name = "t_IncomingIR";
-            this.t_IncomingIR.Size = new System.Drawing.Size(519, 109);
-            this.t_IncomingIR.TabIndex = 7;
-            // 
-            // t_IRCmdTest
-            // 
-            this.t_IRCmdTest.Location = new System.Drawing.Point(36, 417);
-            this.t_IRCmdTest.Name = "t_IRCmdTest";
-            this.t_IRCmdTest.Size = new System.Drawing.Size(519, 20);
-            this.t_IRCmdTest.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 401);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Command for Testing";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(39, 262);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Incoming IR Commands";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aPISpecToolStripMenuItem,
-            this.quickHelpToolStripMenuItem,
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aPISpecToolStripMenuItem
-            // 
-            this.aPISpecToolStripMenuItem.Name = "aPISpecToolStripMenuItem";
-            this.aPISpecToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aPISpecToolStripMenuItem.Text = "API Spec";
-            // 
-            // quickHelpToolStripMenuItem
-            // 
-            this.quickHelpToolStripMenuItem.Name = "quickHelpToolStripMenuItem";
-            this.quickHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.quickHelpToolStripMenuItem.Text = "Quick Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(36, 275);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(519, 121);
+            this.listBox1.TabIndex = 11;
             // 
             // MainForm
             // 
@@ -284,10 +285,10 @@
             this.ClientSize = new System.Drawing.Size(590, 529);
             this.Controls.Add(this.b_SaveCmd);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.t_Command);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.t_Function);
+            this.Controls.Add(this.t_Device);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
@@ -313,12 +314,12 @@
         private System.Windows.Forms.ToolStripMenuItem configurationToolStripMenuItem;
         private System.Windows.Forms.Button b_StartListening;
         private System.Windows.Forms.Button b_TestCommand;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox t_Device;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox t_Function;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox t_Command;
         private System.Windows.Forms.Button b_SaveCmd;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.StatusStrip statusStrip1;
@@ -331,7 +332,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox t_IRCmdTest;
-        private System.Windows.Forms.TextBox t_IncomingIR;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
