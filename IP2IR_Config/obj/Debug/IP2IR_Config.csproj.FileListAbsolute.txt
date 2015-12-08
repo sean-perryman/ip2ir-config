@@ -1,0 +1,8 @@
+c:\users\sean\documents\visual studio 2013\Projects\IP2IR_Config\IP2IR_Config\bin\Debug\IP2IR_Config.exe
+c:\users\sean\documents\visual studio 2013\Projects\IP2IR_Config\IP2IR_Config\bin\Debug\IP2IR_Config.pdb
+c:\users\sean\documents\visual studio 2013\Projects\IP2IR_Config\IP2IR_Config\obj\Debug\IP2IR_Config.csprojResolveAssemblyReference.cache
+c:\users\sean\documents\visual studio 2013\Projects\IP2IR_Config\IP2IR_Config\obj\Debug\IP2IR_Config.Properties.Resources.resources
+c:\users\sean\documents\visual studio 2013\Projects\IP2IR_Config\IP2IR_Config\obj\Debug\IP2IR_Config.csproj.GenerateResource.Cache
+c:\users\sean\documents\visual studio 2013\Projects\IP2IR_Config\IP2IR_Config\obj\Debug\IP2IR_Config.exe
+c:\users\sean\documents\visual studio 2013\Projects\IP2IR_Config\IP2IR_Config\obj\Debug\IP2IR_Config.pdb
+c:\users\sean\documents\visual studio 2013\Projects\IP2IR_Config\IP2IR_Config\obj\Debug\IP2IR_Config.MainForm.resources
