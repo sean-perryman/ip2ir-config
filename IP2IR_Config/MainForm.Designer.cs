@@ -47,13 +47,13 @@
             this.t_Command = new System.Windows.Forms.TextBox();
             this.b_SaveCmd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.t_IRCmdTest = new System.Windows.Forms.TextBox();
             this.b_StopListening = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -113,20 +113,21 @@
             // aPISpecToolStripMenuItem
             // 
             this.aPISpecToolStripMenuItem.Name = "aPISpecToolStripMenuItem";
-            this.aPISpecToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.aPISpecToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aPISpecToolStripMenuItem.Text = "API Spec";
             // 
             // quickHelpToolStripMenuItem
             // 
             this.quickHelpToolStripMenuItem.Name = "quickHelpToolStripMenuItem";
-            this.quickHelpToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.quickHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quickHelpToolStripMenuItem.Text = "Quick Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // b_StartListening
             // 
@@ -220,6 +221,14 @@
             this.panel1.Size = new System.Drawing.Size(590, 502);
             this.panel1.TabIndex = 12;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(36, 275);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(519, 121);
+            this.listBox1.TabIndex = 11;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -269,14 +278,6 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(36, 275);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(519, 121);
-            this.listBox1.TabIndex = 11;
             // 
             // MainForm
             // 
